@@ -98,6 +98,10 @@ app.get("/debug/users/:id", async (req, res) => {
   console.log("Nenhum user cacheado");
 });
 
+app.post("/login", async (req, res) => {
+  return res.json("Login in build");
+});
+
 app.listen(process.env.PORT, () => {
   console.log(`API is running on port ${process.env.PORT}`);
 });
